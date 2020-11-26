@@ -12,7 +12,7 @@ app.get('/',(req,res)=>{
 });
 
 app.get('/resume',(req,res)=>{
-    res.download(path.join(__dirname,'/public/tirtharajsengupta.pdf'));
+    res.download(path.join(__dirname,'/public/assets/tirtharajsengupta.pdf'));
 })
 
 app.listen(port,()=>{
