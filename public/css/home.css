@@ -44,9 +44,7 @@ body{
     width: 100%;
 }
 
-li{
-    list-style: none;
-}
+
 a{
     text-decoration: none;
 }
@@ -224,9 +222,10 @@ text-shadow: -10px 10px 0px #00cfcf,
     padding: 5rem 8rem 0rem 8rem;
 }
 
-#exp{
-    padding: 0rem 4rem 3rem 8rem;
-    display: flex;
+#exp,#edu{
+    padding: 0rem 4rem 3rem 11rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-items: space-between;
 }
 
@@ -240,11 +239,21 @@ text-shadow: -10px 10px 0px #00cfcf,
     text-shadow: -10px 10px 0px #00d4d4,
                  -20px 20px 0px #00bdbd;
 }
+.ed{
+    padding: 3rem 8rem 0rem 8rem;
+    font-family: Archivo,sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #1e7070;;
+    text-shadow: -10px 10px 0px #00d4d4,
+                 -20px 20px 0px #00bdbd
+}
 
-.experience{
+.experience,.education{
 
-    max-width: max-content;
-    margin-right: auto;
+    max-width: 32vw;
+    margin-right: none;
     margin-top: 2rem;
     font-family: Archivo,sans-serif;
     padding: 2rem;
@@ -297,6 +306,9 @@ text-shadow: -10px 10px 0px #00cfcf,
 #articleList{
     padding: 1rem 2rem 1rem 2rem;
 }
+#articleList>li{
+    list-style: none;
+}
 .tasklist{
     padding: 0.5rem 2rem 1rem 2rem;
     transition: 0.4s;
@@ -314,19 +326,20 @@ text-shadow: -10px 10px 0px #00cfcf,
 }
 
 #lead{
-    font-size: 2.5rem;
+    font-size: 2.2rem;
 }
 
 #secondary{
     font-style: italic;
+    font-size: 1.2rem;
 }
 
 #description{
     padding: 0.4rem;
 }
 
-#li1{
-    padding: 20px;
+.li1{
+    list-style: none;
 }
 
 .lilead{
@@ -345,6 +358,13 @@ text-shadow: -10px 10px 0px #00cfcf,
 #myImg:hover{
     animation: shake 2s infinite;
     transition: 0.4s;
+}
+
+.repository{
+    font-size: 1.2rem;
+    cursor: pointer;
+    font-style: italic;
+    color : rgb(39, 82, 85);
 }
 
 @keyframes shake {
@@ -401,7 +421,7 @@ text-shadow: -10px 10px 0px #00cfcf,
 
 
   @media (max-width : 1300px){
-    .experience{
+    .experience,.education{
         max-width: max-content;
         margin-right: 30px;
         margin-top: 2rem;
@@ -425,7 +445,7 @@ text-shadow: -10px 10px 0px #00cfcf,
 
   }
   @media (max-width : 900px){
-    #exp{
+    #exp,#edu{
         padding: 0rem 4rem 3rem 8rem;
         display: block;
     }
@@ -565,7 +585,7 @@ text-shadow: -10px 10px 0px #00cfcf,
             text-shadow: -10px 10px 0px #00d4d4,
                          -20px 20px 0px #00bdbd;
         }
-        #exp{
+        #exp,#edu{
             padding: 0 5rem 0 1rem;
             width: 99vw;
             margin-bottom: 20px;
@@ -576,3 +596,5 @@ text-shadow: -10px 10px 0px #00cfcf,
         }
         
   }
+
+ 
