@@ -574,12 +574,13 @@ text-shadow: -10px 10px 0px #00cfcf,
             justify-content: space-between;
             padding: 0rem 1rem 0rem 1rem;
         }
-        .work{
+        .work,.ed{
             transform: translateX(-7rem);
             font-family: Archivo,sans-serif;
+            
             font-size: 4rem;
             font-weight: bold;
-            margin-top: -5rem;
+            margin-top: -3rem;
             font-style: italic;
             color: #1e7070;;
             text-shadow: -10px 10px 0px #00d4d4,
